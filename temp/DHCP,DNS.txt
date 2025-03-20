@@ -1,0 +1,48 @@
+1] TAKE 2 SERVERS
+	1 ROUTER 
+	1 SWITCH 
+	2 PCS
+
+2] ROUTER 0 
+	Desktop->IP config
+	192.168.1.1
+
+3] Server 0 DHCP
+	Desktop->IP config
+	IP Address: 192.168.1.2
+	Default Gateway: 192:168:1.1
+	DNS:192.168.1.3
+
+
+4] Server 1 DNS
+	Desktop->IP config
+	IP Address: 192.168.1.3
+	Default Gateway: 192:168:1.1
+	DNS:192.168.1.3
+
+5] Server0(DHCP) -> Services -> DHCP  (Service : ON)->Start IP: 192.168.1.4->Save
+
+6] PC0 -> Desktop -> IP Config ->DHCP : ON
+
+7] PC1 -> Desktop -> IP Config ->DHCP : ON
+
+8] PC2 -> Desktop -> IP Config ->DHCP : ON
+
+9] Server1(DNS) -> Services -> DNS ->DNS Service : ON
+	1.Name: somaiya.com
+  	Address: 192.168.1.2
+  	ADD
+	
+	2.Name: ruia
+  	Address: 192.168.1.3
+  	ADD
+	
+	Save
+10] Server0(DHCP) > Services > HTTP ->index.html 🡪 edit (edit according to you then)->save
+11] Server1(DNS) > Services > HTTP ->index.html 🡪 edit (edit according to you then)->save
+12] PC1 -> Desktop -> Web Browser -> URL: http://somaiya.com, http://ruia 
+12] PC2 -> Desktop -> Web Browser -> URL: http://somaiya.com, http://ruia 
+
+
+
+

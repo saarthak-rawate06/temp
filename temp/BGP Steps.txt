@@ -1,0 +1,33 @@
+BGP Steps
+
+
+configure all routers and pcs
+
+in router 0 CLI
+Router>enable
+Router#Configure terminal
+Router(config)#router bgp 100
+Router(config-router)#network 10.0.0.0 mask 255.0.0.0
+Router(config-router)#neighbor 50.0.0.2 remote-as 200
+Router(config-router)#neighbor 60.0.0.1 remote-as 300
+Router(config-router)#exit
+
+in router 1 CLI
+Router>enable
+Router#Configure terminal
+Router(config)#router bgp 200
+Router(config-router)#network 20.0.0.0 mask 255.0.0.0
+Router(config-router)#neighbor 50.0.0.1 remote-as 100
+Router(config-router)#neighbor 70.0.0.2 remote-as 300
+Router(config-router)#exit
+
+in router 2 CLI
+Router>enable
+Router#Configure terminal
+Router(config)#router bgp 300
+Router(config-router)#network 30.0.0.0 mask 255.0.0.0
+Router(config-router)#neighbor 70.0.0.1 remote-as 200
+Router(config-router)#neighbor 60.0.0.2 remote-as 100
+Router(config-router)#exit
+
+AND THEN SEND THE PACKETS
