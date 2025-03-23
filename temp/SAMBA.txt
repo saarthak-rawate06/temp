@@ -1,0 +1,36 @@
+SAMBA
+
+1. sudo su
+
+2. sudo apt-get update
+
+3. sudo apt install samba
+
+4. sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.backup
+
+5. sudo mkdir -p /home/saarthak/Somaiya
+
+6. cd /home/saarthak/Somaiya
+
+7. sudo adduser Somaiya
+
+8. sudo smbpasswd -a Somaiya
+
+9. sudo systemctl restart smbd
+
+10. sudo systemctl status smbd
+
+11. sudo nano /etc/samba/smb.conf and press enter and then add the following lines in the last 
+
+[somaiya]
+path=/home/saarthak/Somaiya
+read only=no
+valid users=saarthak
+
+12. ifconfig copy the ip address
+
+13. go to windows explorer->paste the ip address (ex \\192.168.159.128)
+
+14. double click on the file and enter the credentials 
+
+your samba practical has been completed

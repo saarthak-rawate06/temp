@@ -1,0 +1,10 @@
+check uppercase or lowercase
+
+echo -e “Enter a character : “;
+read n
+case $n in
+[A-Z]) echo -e “$n is an upper-case alphabet”;;
+[0-9]) echo -e “$n is a digit”;;
+[a-z]) echo -e “$n is a lower-case alphabet”;;
+*) echo -e “$n is a special character”;;
+esac

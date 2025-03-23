@@ -1,0 +1,47 @@
+NFS SERVER
+
+1. sudo su
+
+2. sudo apt-get update
+
+3. sudo apt install nfs-kernel-server
+
+4. sudo mkdir -p /home/saarthak/share
+
+5. cd /home/saarthak/share
+
+6. sudo touch f.txt
+
+7. sudo chmod -R 755 /home/saarthak/share
+
+8. sudo nano /etc/exports and enter and then add the following in the last
+
+/home/saarthak/share*(rw)
+
+CTRL+X
+
+Y
+
+enter
+
+9.sudo systemctl restart nfs-kernel-server
+
+10. ifconfig
+
+11.open another terminal -> sudo su
+
+12. \cd
+
+13. showmount -e
+
+14. cd /home/saarthak
+
+15. ls
+
+16. cd /home/saarthak/share
+
+17. ls
+
+your f1.txt file will be shown and your practical is complete
+
+

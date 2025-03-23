@@ -1,0 +1,39 @@
+Linux Terminal Commands
+
+date (displays the current date, time and day).
+
+ls (list of directories).
+
+pwd (present working directory).
+
+mkdir (create directory).
+
+cd (to go into created directory).
+
+cd\ (to get out of directory).
+
+rmdir (to remove directory).
+
+vi (to create file , and then click insert button and then esc and :wq to get out of the file(save and quit)).
+
+cat ‘name’ ( display written content)
+
+touch (to create empty file).
+
+cp (copy) [cp ‘old file name’ ‘new file name’].
+
+cat>’name’ ( ctrl+z ).
+
+mv (to move [ mv ‘old file name’ ‘new file name’]).
+
+clear (to clear screen).
+
+.sh (for saving shell script extension).
+
+who (to check the current host).
+
+wc (to count number of characters).
+
+cal ‘year’ (to display calendar).
+
+pwd :- Returns the present working directory. 

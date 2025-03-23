@@ -1,0 +1,12 @@
+take no. from user and do that operation 1=+, 2=-, 3=\
+
+echo -e “Enter number between 1 and 3”;
+read a
+echo -e “Enter two numbers”;
+read b c
+case $a in
+1) echo -e “b+c = `expr $b + $c`”;;
+2) echo -e “b-c = `expr $b - $c`”;;
+3) echo -e “b*c= `expr $b \* $c`”;;
+*) echo -e “Invalid Input”;;
+Esac

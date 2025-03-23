@@ -1,0 +1,6 @@
+move content from 1 file to another and remove directory
+
+echo -e “To create directory : `mkdir prac`”;
+echo -e “To move content : `mv SAROJ das`”;
+echo -e “To display list of directory : `ls`”;
+echo -e “To remove directory : `rmdir prac`”;

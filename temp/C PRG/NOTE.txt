@@ -1,0 +1,5 @@
+NOTE
+
+to compile c file -> gcc filename.c
+
+to run compiled file -> ./a.out

@@ -1,0 +1,7 @@
+Note
+
+vi file_name.extension  (ex. vi view.sh)
+
+to run sh files 
+
+sh file_name.sh (ex sh view.sh)

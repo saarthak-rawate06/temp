@@ -1,0 +1,30 @@
+MAXIMUM OF 3
+
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+printf(“Enter first number: \n “);
+scanf(“%d”,&a);
+printf(“Enter second number:\n”);
+
+scanf(“%d”,&b);
+printf(“Enter third number:\n”);
+scanf(“%d”,&c);
+if(a>b){
+if(a>c){
+printf(“%d is max\n”,a);
+}
+else{
+printf(“%d is max\n”, c);
+}
+}
+else{
+if(b>c){
+printf(“%d is max\n”,b);
+}
+else{
+Printf(“%d is max\n”,c);
+}
+return 0;
+}

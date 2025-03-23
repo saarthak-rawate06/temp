@@ -1,0 +1,14 @@
+number is small, great, equal
+
+echo -e “Enter two numbers:”;
+read a b
+if [ $a -gt $b ]
+then echo -e “$a is greater”;
+elif [ $a -lt $b ]
+then echo -e “$a is smaller”;
+elif [ $a == $b ]
+then echo -e “$a is equal to $b”;
+
+else
+echo -e “Invalid”;
+fi

@@ -1,0 +1,6 @@
+copy content from 1 file to another
+
+echo -e “To create an empty file : `touch project `”;
+echo -e “To copy the file : `cp shradha sriya`”;
+echo -e “To display tty: `tty`”;
+echo -e “To count number of words : `wc shradha` “;

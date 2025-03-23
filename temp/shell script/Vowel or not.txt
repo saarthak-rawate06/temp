@@ -1,0 +1,18 @@
+Vowel or not
+
+echo -e “Enter character”;
+read a
+case $a in
+a) echo -e “VOWEL”;;
+
+e) echo -e “VOWEL”;;
+i) echo -e “VOWEL”;;
+o) echo -e “VOWEL”;;
+u) echo -e “VOWEL”;;
+A) echo -e “VOWEL”;;
+E) echo -e “VOWEL”;;
+I) echo -e “VOWEL”;;
+O) echo -e “VOWEL”;;
+U) echo -e “VOWEL”;;
+*) echo -e “Invalid Input”;;
+Esac

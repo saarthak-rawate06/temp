@@ -1,0 +1,54 @@
+FTP SERVER
+
+1. sudo su 
+
+2. sudo apt update
+
+3. sudo apt install vsftpd
+
+4.sudo nano /etc/vsftpd.conf and enter and then make sure the following are done
+
+
+listen=YES
+
+listen_ipv6=NO
+
+anonymous_enable=YES
+
+local_enable=YES
+
+write_enable=YES
+
+dirmessage_enable=YES
+
+use_localtime=YES
+
+xferlog_enable=YES
+
+connect_from_port_20=YES
+
+# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that
+# the user does not have write access to the top level directory within the
+# chroot)
+chroot_local_user=YES
+
+pam_service_name=vsftpd
+
+ssl_enable=NO
+
+5. sudo systemctl restart vsftpd
+
+6. sudo systemctl status vsftpd
+
+7. ifconfig copy the inetaddress and use it to connect from the client
+
+8. ftp hostname@inetaddress (ex. ftp saathak@192.168.159.128) and enter the credentials
+
+9. run the commands ls, cd etc
+
+in windows explorer enter the following in the path ribbon
+ftp://username:password@ftpserveraddress. 
+ex. ftp://saarthak:system123@192.168.159.128
+ 
+
+

@@ -1,0 +1,9 @@
+greater number btn 2
+
+echo -e “Enter two numbers:”;
+read a b
+if [ $a -gt $b ]
+then echo -e “$a is greater”;
+else
+echo -e “$b is greater”;
+fi

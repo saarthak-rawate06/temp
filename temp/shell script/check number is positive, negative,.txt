@@ -1,0 +1,12 @@
+check number is positive, negative, 0 
+
+echo -e “Enter a number”;
+read a
+if [ $a -gt 0 ]
+
+then echo -e “$a is positive”;
+elif [ $a -lt 0 ]
+then echo -e “$a is negative”;
+else
+echo -e “$a is equal to 0”;
+fi

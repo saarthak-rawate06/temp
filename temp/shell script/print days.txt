@@ -1,0 +1,14 @@
+print days
+
+echo -e “Enter day number”;
+read a
+case $a in
+1) echo -e “Sunday”;;
+2) echo -e “Monday”;;
+3) echo -e “Tuesday”;;
+4) echo -e “Wednesday”;;
+5) echo -e “Thursday”;;
+6) echo -e “Friday”;;
+7) echo -e “Saturday”;;
+*) echo -e “Invalid output! Kindly enter number between 1 to 7”;;
+Esac

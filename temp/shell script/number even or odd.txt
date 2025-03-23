@@ -1,0 +1,9 @@
+number even or odd
+
+echo -e “Enter a number”;
+read a
+if [ `expr $a % 2` == 0 ]
+then echo -e “$a is even”;
+else
+echo -e “$a is odd”;
+fi

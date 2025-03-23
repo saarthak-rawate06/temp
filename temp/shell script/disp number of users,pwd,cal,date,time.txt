@@ -1,0 +1,6 @@
+disp number of users,pwd,cal,date,time
+
+echo -e “No. of users in the system : `who` ”;
+echo -e “Present working directory : `pwd`”;
+echo -e “Calendar of birth month : `cal 06 2004` “;
+echo -e “Current date and time : `date` “;

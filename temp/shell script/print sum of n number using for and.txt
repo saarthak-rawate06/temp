@@ -1,0 +1,28 @@
+print sum of n number using for and while
+
+FOR:
+
+echo -e “Enter size:”;
+read n
+sum=0
+echo -e “Enter numbers:”;
+for((i=1; i <= n; i++))
+do
+read num
+sum=`expr $((sum+num))`
+done
+echo -e “Sum is $sum”:
+
+WHILE:
+echo -e “Enter size:”;
+read n
+sum=0
+i=1
+echo -e “Enter numbers:”;
+while [ $i -le $n ]
+do
+read num
+sum=`expr $((sum+num))`
+i=`expr $((i+1))`
+done
+echo -e “Sum is $sum”:
